@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #d3ccd7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: wrap;
+}
+.music-player{
+    background: #705e78;
+    width: 400px;
+    padding: 25px 35px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+nav .circle{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #e7e2e9;
+    color: #433847;
+    box-shadow: 0 5px 10px rgba(84, 59, 107, 0.2);
+}
+
+.song-img{
+    width: 220px;
+    border-radius: 50%;
+    border: 8px solid #e7e2e9;
+    box-shadow: 0 10px 60px rgba(84, 59, 107, 0.2);
+}
+
+.music-player h1{
+    font: 20px;
+    font-weight: 400;
+    color: #333;
+    margin-top: 20px;
+}
+
+.music-player p{
+    font-size: 14px;
+    color: #333;
+}
+
+#progress{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #433847;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: #433847;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 6px solid #e7e2e9;
+    box-shadow: 0 5px 5px rgba(84, 59, 107, 0.2);
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls div{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background: #e7e2e9;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #433847;
+    box-shadow: 0 10px 20px rgba(84, 59, 107, 0.2);
+    cursor: pointer;
+}
+
+.controls div:nth-child(2){
+    transform: scale(1.5);
+    background: #433847;
+    color: #e7e2e9;
+}
+
+/* #song{
+    display: none;
+} */
